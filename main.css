@@ -4,19 +4,22 @@ body {
 
     font-family: Calibri, sans-serif;
 
+    perspective: 100vw;
     transform-style: preserve-3d;
-    perspective: 1080px;
 }
 
 h1 {
-    transform: translateZ(0px) rotateY(20deg);
+    transform: translate3d(0, 0, -800px) rotateY(-40deg);
+
+    font-size: 20em;
 }
 
 h2 {
-    display: inline-block;
-    transform: translateZ(0px) rotateY(20deg);
+    transform: translate3d(-600px, 0, -1500px) rotateY(45deg);
+
+    font-size: 5em;
 }
 
 p {
-    transform: translateZ(0px) rotateY(-5deg);
+    transform: translate3d(0, 0, 0px) rotateY(-10deg);
 }
