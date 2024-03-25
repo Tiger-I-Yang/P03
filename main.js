@@ -1,8 +1,10 @@
 
 (async () => {
 
+    const scene = document.getElementById('scene')
+
     const updatePerspective = () => {
-        document.body.style.perspectiveOrigin = `50vw calc(40vh + ${window.scrollY}px)`
+        scene.style.perspectiveOrigin = `50% calc(50% + ${window.scrollY}px)`
     }
 
     updatePerspective()
@@ -11,7 +13,5 @@
         updatePerspective,
         {capture: false, passive: true}
     )
-
-	
 
 })()

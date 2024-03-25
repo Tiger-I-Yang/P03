@@ -1,46 +1,45 @@
 
 body {
-    padding: 20%;
-    margin: 0;
-
     font-family: Calibri, sans-serif;
-
-    perspective: 100vw;
-    transform-style: preserve-3d;
 
     overflow-x: hidden;
 }
 
-/* h1, h2, p {
-    margin: 0;
-} */
-h1, h2 {
-    white-space: nowrap;
+#scene {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+
+    perspective: 100vw;
+    transform-style: preserve-3d;
+}
+
+h1, h2, p {
+    text-shadow: 0 0 3px rgb(255, 255, 255);
 }
 
 h1 {
-    transform: translate3d(0, 0, -1500px) rotateY(-20deg);
+    transform: translate3d(-500px, 0, -2000px) rotateY(-20deg);
 
     font-size: 20em;
     text-align: right;
 }
-
 h2 {
-    transform: translate3d(-350px, 0, -1000px) rotateY(45deg);
+    transform: translate3d(-400px, 0, -1000px) rotateY(45deg);
 
     font-size: 5em;
 }
-
 p {
-    transform: translate3d(0, 0, 0px) rotateY(-20deg);
+    transform: translate3d(0, 0, 0) rotateY(-10deg);
 
     margin-left: 50%;
 }
-
 img {
-    transform: translate3d(-150px, 0, -500px) rotateY(20deg);
+    transform: translate3d(-200px, 0, -500px) rotateY(5deg);
 
     border-radius: 10px;
 
-    width: 60%;
+    width: 90%;
 }
