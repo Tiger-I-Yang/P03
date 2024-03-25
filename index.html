@@ -17,39 +17,31 @@
         <h1>Welcome!</h1>
         <h2>About Me</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus tempus arcu. Cras gravida lacus nec enim semper tempor. Praesent tellus quam, volutpat quis nisi sed, vulputate tempus est. Ut ut ultrices mi. Duis convallis blandit nisl, non pellentesque ex luctus eget. Proin auctor aliquam metus nec mollis. Phasellus quis enim et felis tincidunt blandit. Mauris laoreet urna sem, ac scelerisque ex dignissim at.</p>
+        <p>Hello! My name is Tiger Yang, and ever since becoming interested in frontend web development, I've always been into pushing the boundaries of what's possible with the medium and creating online experiences that others won't soon forget.</p>
+        <p>Browser compatibility often finds itself at the bottom of my priorities, as I employ the most experimental and cutting-edge APIs to make my dreams into reality.</p>
+        <p>I also highly prioritize optimization. The stereotype of websites being fundamentally slower than native apps is something I wish to fight, and because of that, I tend to never use third-party libraries and frameworks, as in my mind, "nothing" will always be faster than "anything".</p>
+		<img src="media/me.jpg">
 
-        <h2>What I Do</h2>
+        <h2>Project Process Analysis One</h2>
 
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ut porttitor massa. Nullam erat nulla, sodales et justo nec, egestas vehicula nisi. Maecenas tempus semper leo, at lacinia augue mollis a. Nulla tristique consequat massa fermentum vulputate. Curabitur tempus consequat maximus. Pellentesque dapibus diam nunc, a auctor lacus rhoncus eu. Nam sit amet rhoncus massa, ut vestibulum erat. Quisque quis mattis lectus. Nullam vitae porttitor odio. Integer laoreet, ipsum vitae scelerisque condimentum, odio lacus malesuada erat, id aliquet urna mi nec est.</p>
+        <p>Shortly after graduation from high school, I had what I considered to be a brilliant idea. Instead of splurging on a hign-perfrmance laptop that was thick, heavy, power hungry, hot, and unupgradable, I could use remote access software to control my home computer from my existing laptop, redirecting the money I saved to upgrade my home computer to be more powerful than any laptop could achieve. However, all existing remote access software had pain points of various kinds, such as unreliable connections, agressive bandwitch hogging, unacceptably high latency, and audio video syncronization problems,. This led me to attempt to write my own remote access software from scratch, with guidance from ChatGPT</p>
+		<img src="media/anal1_1.png">
+        <p>I wanted my app to be as low-level and optomized as possible, so I decided to write it in c++ so that I can interface direcly with Window's Desktop Duplication API and Nvidia's Video Codec SDK to capture the display frames within GPU memory, and encode it to HEVC with ultra low latecny using the GPU's dedicated video engine. </p>
+		<img src="media/anal1_2.png">
+        <p>For audio, I interfaced directly with Window's Audio Session API and LibOpus to capture the speaker output and encode it using the OPUS codec.</p>
+		<img src="media/anal1_3.png">
+		<p>for mouse and keyboard emulation, I originally wanted to use window's acessibility APIs, but I quickly realized that nothing offered by windows would work in the secure desktop, such as a UAC prompt, so I pivoted to using a Raspberry Pi attached to the computer, which via it's usb port's OTG functionality, allows it to masquerade as a keyboard and mouse, completely fooling windows.</p>
+		<img src="media/anal1_4.jpeg">
+		<p>I decided to implement the client as a website using Javascript and it's WebTransport, WebCodecs, Canvas, and Web Audio APIs to communicate with the server using QUIC, decode the arriving video and audio bitstreams using the client device's hardware or software decoders, and display the decoded video and audio frames to the user.</p>
+		<img src="media/anal1_5.png">
 
-        <p>Pellentesque quis odio nec libero dignissim tempus. Quisque quis rhoncus ipsum. Sed id efficitur quam, sed porta nunc. Quisque eu eros id neque congue varius a ac enim. Sed vulputate, felis quis accumsan viverra, diam turpis aliquet metus, non venenatis lorem lacus ac augue. Curabitur consequat feugiat erat, ut viverra mauris imperdiet faucibus. Vestibulum orci lacus, ultrices in mauris at, eleifend eleifend metus. Donec id ultrices sapien. Phasellus id erat a dui euismod ultrices a quis sem. Pellentesque vel massa interdum, varius orci non, varius lectus. In sagittis lacus quis nunc volutpat, pulvinar condimentum elit lobortis.</p>
+        <h2>Project Process Analysis Two</h2>
 
-        <p>Maecenas mollis, tortor nec hendrerit euismod, quam leo egestas risus, et faucibus sem ex at diam. Nullam id mi quis neque ultricies mollis a a dui. Nam mattis, urna id volutpat efficitur, velit dolor scelerisque neque, vel venenatis neque ipsum non enim. Fusce cursus at turpis sit amet consectetur. Quisque vitae scelerisque justo. Sed sed arcu dolor. Ut malesuada pellentesque ornare.</p>
-   
-        <h2>What I Do</h2>
+        <p>i ran out of time :(</p>
 
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ut porttitor massa. Nullam erat nulla, sodales et justo nec, egestas vehicula nisi. Maecenas tempus semper leo, at lacinia augue mollis a. Nulla tristique consequat massa fermentum vulputate. Curabitur tempus consequat maximus. Pellentesque dapibus diam nunc, a auctor lacus rhoncus eu. Nam sit amet rhoncus massa, ut vestibulum erat. Quisque quis mattis lectus. Nullam vitae porttitor odio. Integer laoreet, ipsum vitae scelerisque condimentum, odio lacus malesuada erat, id aliquet urna mi nec est.</p>
+        <h2>HTML And CSS Templates</h2>
 
-        <p>Pellentesque quis odio nec libero dignissim tempus. Quisque quis rhoncus ipsum. Sed id efficitur quam, sed porta nunc. Quisque eu eros id neque congue varius a ac enim. Sed vulputate, felis quis accumsan viverra, diam turpis aliquet metus, non venenatis lorem lacus ac augue. Curabitur consequat feugiat erat, ut viverra mauris imperdiet faucibus. Vestibulum orci lacus, ultrices in mauris at, eleifend eleifend metus. Donec id ultrices sapien. Phasellus id erat a dui euismod ultrices a quis sem. Pellentesque vel massa interdum, varius orci non, varius lectus. In sagittis lacus quis nunc volutpat, pulvinar condimentum elit lobortis.</p>
-
-        <p>Maecenas mollis, tortor nec hendrerit euismod, quam leo egestas risus, et faucibus sem ex at diam. Nullam id mi quis neque ultricies mollis a a dui. Nam mattis, urna id volutpat efficitur, velit dolor scelerisque neque, vel venenatis neque ipsum non enim. Fusce cursus at turpis sit amet consectetur. Quisque vitae scelerisque justo. Sed sed arcu dolor. Ut malesuada pellentesque ornare.</p>
-
-        <h2>What I Do</h2>
-
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ut porttitor massa. Nullam erat nulla, sodales et justo nec, egestas vehicula nisi. Maecenas tempus semper leo, at lacinia augue mollis a. Nulla tristique consequat massa fermentum vulputate. Curabitur tempus consequat maximus. Pellentesque dapibus diam nunc, a auctor lacus rhoncus eu. Nam sit amet rhoncus massa, ut vestibulum erat. Quisque quis mattis lectus. Nullam vitae porttitor odio. Integer laoreet, ipsum vitae scelerisque condimentum, odio lacus malesuada erat, id aliquet urna mi nec est.</p>
-
-        <p>Pellentesque quis odio nec libero dignissim tempus. Quisque quis rhoncus ipsum. Sed id efficitur quam, sed porta nunc. Quisque eu eros id neque congue varius a ac enim. Sed vulputate, felis quis accumsan viverra, diam turpis aliquet metus, non venenatis lorem lacus ac augue. Curabitur consequat feugiat erat, ut viverra mauris imperdiet faucibus. Vestibulum orci lacus, ultrices in mauris at, eleifend eleifend metus. Donec id ultrices sapien. Phasellus id erat a dui euismod ultrices a quis sem. Pellentesque vel massa interdum, varius orci non, varius lectus. In sagittis lacus quis nunc volutpat, pulvinar condimentum elit lobortis.</p>
-
-        <p>Maecenas mollis, tortor nec hendrerit euismod, quam leo egestas risus, et faucibus sem ex at diam. Nullam id mi quis neque ultricies mollis a a dui. Nam mattis, urna id volutpat efficitur, velit dolor scelerisque neque, vel venenatis neque ipsum non enim. Fusce cursus at turpis sit amet consectetur. Quisque vitae scelerisque justo. Sed sed arcu dolor. Ut malesuada pellentesque ornare.</p>
-
-        <h2>What I Do</h2>
-
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus ut porttitor massa. Nullam erat nulla, sodales et justo nec, egestas vehicula nisi. Maecenas tempus semper leo, at lacinia augue mollis a. Nulla tristique consequat massa fermentum vulputate. Curabitur tempus consequat maximus. Pellentesque dapibus diam nunc, a auctor lacus rhoncus eu. Nam sit amet rhoncus massa, ut vestibulum erat. Quisque quis mattis lectus. Nullam vitae porttitor odio. Integer laoreet, ipsum vitae scelerisque condimentum, odio lacus malesuada erat, id aliquet urna mi nec est.</p>
-
-        <p>Pellentesque quis odio nec libero dignissim tempus. Quisque quis rhoncus ipsum. Sed id efficitur quam, sed porta nunc. Quisque eu eros id neque congue varius a ac enim. Sed vulputate, felis quis accumsan viverra, diam turpis aliquet metus, non venenatis lorem lacus ac augue. Curabitur consequat feugiat erat, ut viverra mauris imperdiet faucibus. Vestibulum orci lacus, ultrices in mauris at, eleifend eleifend metus. Donec id ultrices sapien. Phasellus id erat a dui euismod ultrices a quis sem. Pellentesque vel massa interdum, varius orci non, varius lectus. In sagittis lacus quis nunc volutpat, pulvinar condimentum elit lobortis.</p>
-
-        <p>Maecenas mollis, tortor nec hendrerit euismod, quam leo egestas risus, et faucibus sem ex at diam. Nullam id mi quis neque ultricies mollis a a dui. Nam mattis, urna id volutpat efficitur, velit dolor scelerisque neque, vel venenatis neque ipsum non enim. Fusce cursus at turpis sit amet consectetur. Quisque vitae scelerisque justo. Sed sed arcu dolor. Ut malesuada pellentesque ornare.</p>
+        <p>i ran out of time :(</p>
 
     </body>
 

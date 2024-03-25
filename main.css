@@ -11,30 +11,36 @@ body {
     overflow-x: hidden;
 }
 
+/* h1, h2, p {
+    margin: 0;
+} */
+h1, h2 {
+    white-space: nowrap;
+}
+
 h1 {
-    font-size: 15em;
-    
+    transform: translate3d(0, 0, -1500px) rotateY(-20deg);
+
+    font-size: 20em;
     text-align: right;
 }
 
 h2 {
+    transform: translate3d(-350px, 0, -1000px) rotateY(45deg);
+
     font-size: 5em;
 }
 
 p {
+    transform: translate3d(0, 0, 0px) rotateY(-20deg);
+
     margin-left: 50%;
 }
 
+img {
+    transform: translate3d(-150px, 0, -500px) rotateY(20deg);
 
+    border-radius: 10px;
 
-h1 {
-    transform: translate3d(0, 0, -1500px) rotateY(-30deg);
-}
-
-h2 {
-    transform: translate3d(-350px, 0, -1000px) rotateY(45deg);
-}
-
-p {
-    transform: translate3d(0, 0, 0px) rotateY(-15deg);
+    width: 60%;
 }
