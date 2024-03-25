@@ -2,7 +2,7 @@
 (async () => {
 
     const updatePerspective = () => {
-        document.body.style.perspectiveOrigin = `${window.innerWidth/2 + window.scrollX}px ${window.innerHeight/2 + window.scrollY}px`
+        document.body.style.perspectiveOrigin = `50vw calc(40vh + ${window.scrollY}px)`
     }
 
     updatePerspective()
@@ -10,11 +10,6 @@
         'scroll', 
         updatePerspective,
         {capture: false, passive: true}
-    )
-    window.addEventListener(
-        'resize', 
-        updatePerspective,
-        {capture: true, passive: true}
     )
 
 	
