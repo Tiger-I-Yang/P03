@@ -10,10 +10,10 @@ body {
     left: 0;
     right: 0;
 
+    transform-style: preserve-3d;
     perspective: 100vw;
 
     overflow-x: hidden;
-    /* overflow-y: scroll; */
 }
 
 section {
@@ -45,7 +45,7 @@ h2 {
 h3 {
     margin-top: -900px;
     margin-bottom: 450px;
-    transform: translate3d(0px, 0px, -4000px);
+    transform: translate3d(0px, 0px, -4500px);
 
     font-size: 6em;
     text-align: center;
@@ -68,4 +68,27 @@ h4 {
     transform: translate3d(-500px, -50px, -1700px) rotateY(10deg);
 
     font-size: 2.5em;
+}
+
+#contacts {
+    transform-style: preserve-3d;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+
+    transform: rotateX(15deg) translate3d(0px, 0px, -500px);
+}
+#contacts > img {
+    transform: none;
+    width: 200px;
+}
+#contacts > img:hover {
+    transform: translateZ(8px);
+
+    cursor: grab;
+}
+#contacts > img:active {
+    transform: translateZ(-15px);
 }
