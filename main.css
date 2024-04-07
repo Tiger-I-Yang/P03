@@ -1,6 +1,6 @@
 
 body {
-    font-family: Calibri, sans-serif;
+    font-family: sans-serif;
 }
 
 #scene {
@@ -11,10 +11,13 @@ body {
     right: 0;
 
     perspective: 100vw;
-    transform-style: preserve-3d;
 
     overflow-x: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+}
+
+section {
+    transform-style: preserve-3d;
 }
 
 h1, h2, h3 {
@@ -26,24 +29,25 @@ h1, h2, h3, p {
 }
 
 h1 {
-    transform: translate3d(-500px, 0px, -8000px) rotateY(-30deg);
+    transform: translate3d(-1700px, 0px, -6500px) rotateY(-60deg);
 
-    font-size: 50em;
+    font-size: 80em;
     text-align: right;
 
-    margin-top: 0;
+    margin-top: -0.4em;
 }
 h2 {
-    transform: translate3d(-350px, 0px, -1000px) rotateY(45deg);
+    margin-top: 3em;
+    transform: translate3d(-300px, 0px, -1000px) rotateY(35deg);
 
     font-size: 5em;
 }
 h3 {
-    margin-top: -400px;
-    margin-bottom: 800px;
+    margin-top: -900px;
+    margin-bottom: 450px;
     transform: translate3d(0px, 0px, -4000px);
 
-    font-size: 5em;
+    font-size: 6em;
     text-align: center;
 }
 p {
