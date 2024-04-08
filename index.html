@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en-CA">
+<html lang="en">
 
 	<head>
 
@@ -14,7 +14,7 @@
 
 	<body>
 
-        <div id="scene">
+        <main>
 
             <section>
 
@@ -32,8 +32,8 @@
                 <p>Browser compatibility often finds itself at the bottom of my priorities, as I employ the most experimental and cutting-edge APIs to make my dreams into reality.</p>
                 <p>I also highly prioritize optimization. The stereotype of websites being fundamentally slower than native apps is something I wish to fight, and because of that, I tend to never use third-party libraries and frameworks, as in my mind, "nothing" will always be faster than "anything".</p>
                 
-                <img src="media/me.jpg">
-                <h4>A picture I took at a cat cafe</h4>
+                <img src="media/me.jpg" alt="A picture I took of myself at a cat cafe">
+                <h4>A picture I took of myself at a cat cafe</h4>
 
             </section>
 
@@ -57,27 +57,27 @@
 
                 <p>Shortly after graduation from high school, I had what I considered to be a brilliant idea. Instead of splurging on a hign-perfrmance laptop that was thick, heavy, power hungry, hot, and unupgradable, I could use remote access software to control my home computer from my existing laptop, redirecting the money I saved to upgrade my home computer to be more powerful than any laptop could achieve. However, all existing remote access software had pain points of various kinds, such as unreliable connections, agressive bandwitch hogging, unacceptably high latency, and audio video syncronization problems,. This led me to attempt to write my own remote access software from scratch, with guidance from ChatGPT</p>
 
-                <img src="media/anal1_1.png">
+                <img src="media/anal1_1.png" alt="Screenshot of my ChatGPT dashboard">
                 <h4>Screenshot of my ChatGPT dashboard: <a href="https://chat.openai.com/">https://chat.openai.com/</a></h4>
 
                 <p>I wanted my app to be as low-level and optomized as possible, so I decided to write it in c++ so that I can interface direcly with Window's Desktop Duplication API and Nvidia's Video Codec SDK to capture the display frames within GPU memory, and encode it to HEVC with ultra low latecny using the GPU's dedicated video engine. </p>
 
-                <img src="media/anal1_2.png">
+                <img src="media/anal1_2.png" alt="Screenshot of a section of the code that handles video">
                 <h4>Screenshot of a section of the code that handles video</h4>
 
                 <p>For audio, I interfaced directly with Window's Audio Session API and LibOpus to capture the speaker output and encode it using the OPUS codec.</p>
 
-                <img src="media/anal1_3.png">
+                <img src="media/anal1_3.png" alt="Screenshot of a section of the code that handles audio">
                 <h4>Screenshot of a section of the code that handles audio</h4>
 
                 <p>for mouse and keyboard emulation, I originally wanted to use window's acessibility APIs, but I quickly realized that nothing offered by windows would work in the secure desktop, such as a UAC prompt, so I pivoted to using a Raspberry Pi attached to the computer, which via it's usb port's OTG functionality, allows it to masquerade as a keyboard and mouse, completely fooling windows.</p>
 
-                <img src="media/anal1_4.jpeg">
+                <img src="media/anal1_4.jpeg" alt="Photo of the Raspberry Pi I used to control the computer">
                 <h4>Photo of the Raspberry Pi I used to control the computer</h4>
 
                 <p>I decided to implement the client as a website using Javascript and it's WebTransport, WebCodecs, Canvas, and Web Audio APIs to communicate with the server using QUIC, decode the arriving video and audio bitstreams using the client device's hardware or software decoders, and display the decoded video and audio frames to the user.</p>
 
-                <img src="media/anal1_5.png">
+                <img src="media/anal1_5.png" alt="Screenshot of a section of the client JavaScript code">
                 <h4>Screenshot of a section of the client JavaScript code</h4>
 
                 <p>In the end, while I got further than I could have ever expected, the app still wasn't quite at the level that I had hoped. Emulating mouse and keyboard input via an external OTG device isn't a particularly latency-friendly way of doing it, and the display feed still cuts off when on the secure desktop. However, it was more than functional enough when I stopped development, and I proceeded to extensively use this app I created for the next few semesters of university.</p>
@@ -93,30 +93,30 @@
 
                 <p>Given that I wanted to create something unique, I explored avante-garde website designs and patterns online until my eyes were caught on Glassmorphism. I am a sucker for background blur and the calm intimacy it brings, as well as frosted textured glass, so I thought Glassmorphism would be an excellent design language to adopt for my website.</p>
 
-                <img src="media/anal2_1.webp">
-                <h4>Glassmorphism example: <a href="https://medium.com/@felipe_santos75/glassmorphism-in-flutter-56e9dc040c54">https://medium.com/</a></h4>
+                <img src="media/anal2_1.webp" alt="UI element mockups employing Glassmorphism">
+                <h4>UI element mockups employing Glassmorphism: <a href="https://medium.com/@felipe_santos75/glassmorphism-in-flutter-56e9dc040c54">https://medium.com/</a></h4>
 
                 <p>Unfortunately, I soon realized that backgrounds are REQUIRED for Glassmorphism to work, or else there's nothing for the glass to refract. I tried many different things but ultimately couldn't add a good background that didn't the site look awful.</p>
 
                 <p>So I went searching for styles again and decided to switch from Glassmorphism to a different design language called Neumorphism, which involves light and dark shadows to convey filleted slabs of concrete. This design language stipulates a fully flat and detail-less background to emphasize the shadows and contours.</p>
 
-                <img src="media/anal2_2.webp">
-                <h4>Neumorphism example: <a href="https://uxdesign.cc/the-bad-neumorphism-tutorial-e009fea0ade8">https://uxdesign.cc/</a></h4>
+                <img src="media/anal2_2.webp" alt="UI element mockups employing Neumorphism">
+                <h4>UI element mockups employing Neumorphism: <a href="https://uxdesign.cc/the-bad-neumorphism-tutorial-e009fea0ade8">https://uxdesign.cc/</a></h4>
 
                 <p>However, with the design language solved, various other issues began to reveal themselves one after another. These issues included the Neumorphic shadow details taking up too much screenspace, the black and white shadows preventing the background from being full black or white, problems of affordance and functionality conveyance for interactive elements, etc. Overall, the site just didn't feel "real" or "authentic", and instead looked like a university web design project.</p>
 
-                <img src="media/anal2_3.png">
+                <img src="media/anal2_3.png" alt="University-web-design-project looking website that I had so far">
                 <h4>University-web-design-project looking website that I had so far</h4>
 
                 <p>So with a heavy heart, I made the decision to renounce the unique design ethos I had been building up since the beginning of the project and start over from scratch with a less lofty design goal. I still wanted the site to be totally modern and minimalist, and after extensive hunting, I came across a site template that was simply perfect.</p>
 
-                <img src="media/anal2_4.avif">
+                <img src="media/anal2_4.avif" alt="Totally modern and minimalist website template">
                 <h4>Totally modern and minimalist website template: <a href="https://elements.envato.com/travel-landing-page-template-YDEZSNQ/preview/3">https://elements.envato.com/</a></h4>
 
                 <p>After familiarizing myself with the design language of this template, namely the expansive title background, the floating navigation bar, and the rounded image elements, I redesigned the site, employing this language till I was finally happy with what I got.</p>
 
-                <img src="media/anal2_5.png">
-                <h4>Redesigned site employing the totally modern and minimalistic site template I found</h4>
+                <img src="media/anal2_5.png" alt="My redesigned site employing the totally modern and minimalistic site template I found">
+                <h4>My redesigned site employing the totally modern and minimalistic site template I found</h4>
 
                 <p>While this project was successful in the end, it taught me an important lesson regarding new-fangled design patterns and languages. While experimentation is the key to innovation in any subject, there is a reason these avante-garde design languages are barely used in the industry.</p>
 
@@ -126,26 +126,26 @@
 
                 <h2>Ways to Contact me</h2>
 
-                <div id="contacts">
+                <footer>
                     <!-- https://icon-icons.com/icon/twitter-x-new-logo-square-x/256075 -->
-                    <img src="media/x.png" onclick="window.location.href = 'https://example.com'">
+                    <img src="media/x.png" alt="X button" onclick="window.location.href = 'https://example.com'">
 
                     <!-- https://commons.wikimedia.org/wiki/File:Instagram_icon.png -->
-                    <img src="media/instagram.png" onclick="window.location.href = 'https://example.com'">
+                    <img src="media/instagram.png" alt="Instagram button" onclick="window.location.href = 'https://example.com'">
 
                     <!-- https://www.vecteezy.com/png/18930474-reddit-logo-png-reddit-icon-transparent-png -->
-                    <img src="media/reddit.png" onclick="window.location.href = 'https://example.com'">
+                    <img src="media/reddit.png" alt="Reddit button" onclick="window.location.href = 'https://example.com'">
 
                     <!-- https://commons.wikimedia.org/wiki/File:Phone_iOS.png -->
-                    <img src="media/phone.png" onclick="window.location.href = 'https://example.com'">
+                    <img src="media/phone.png" alt="Phone button" onclick="window.location.href = 'https://example.com'">
 
                     <!-- https://commons.wikimedia.org/wiki/File:Mail_%28iOS%29.svg -->
-                    <img src="media/mail.png" onclick="window.location.href = 'https://example.com'">
-                </div>
+                    <img src="media/mail.png" alt="Email button" onclick="window.location.href = 'https://example.com'">
+                </footer>
 
             </section>
 
-        </div>
+        </main>
 
     </body>
 
