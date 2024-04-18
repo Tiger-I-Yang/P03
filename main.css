@@ -1,6 +1,10 @@
 
 body {
     font-family: sans-serif;
+
+    * {
+        transform-style: preserve-3d;
+    }
 }
 
 main {
@@ -10,86 +14,113 @@ main {
     left: 0;
     right: 0;
 
-    transform-style: preserve-3d;
     perspective: 100vw;
 
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-section {
-    transform-style: preserve-3d;
+/*
+
+h1: Title
+h2: Heading
+h3: Subheading
+h4: Image Caption
+h5:
+h6:
+ 
+*/
+
+a {
+	color:rgb(0, 145, 145);
+}
+a:hover {
+    color:rgb(0, 130, 74);
+    transform: translateZ(5px);
+
+    cursor: pointer;
+}
+a:active {
+    color:rgb(0, 77, 44);
+    transform: translateZ(-15px);
 }
 
-h1, h2, h3 {
+h2, h4 {
+    display: inline-block;
+}
+
+h1, h2 {
     white-space: nowrap;
 }
 
-h1, h2, h3, h4, p {
-    text-shadow: 0 0 3px rgb(255, 255, 255);
+h2, h3, h4, h5, h6, a, p {
+    padding: 15px;
+    border-radius: 15px;
+    
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 h1 {
-    transform: translate3d(-1700px, 0px, -6500px) rotateY(-60deg);
+    transform: translate3d(-1900px, 0px, -5000px) rotateY(-60deg);
 
-    font-size: 80em;
+    font-size: 65em;
     text-align: right;
 
-    margin-top: -0.4em;
+    margin-top: -0.3em;
+    margin-bottom: 0;
 }
 h2 {
     margin-top: 3em;
-    transform: translate3d(-300px, 0px, -1000px) rotateY(35deg);
+    transform: translate3d(-300px, 0px, -800px) rotateY(50deg);
 
     font-size: 5em;
 }
 h3 {
-    margin-top: -900px;
-    margin-bottom: 450px;
-    transform: translate3d(0px, 0px, -4500px);
+    transform: translate3d(-0px, 0px, 0px) rotateY(-10deg);
 
-    font-size: 6em;
-    text-align: center;
+    margin-left: calc(70vw - 150px);
 }
 p {
-    transform: translate3d(-80px, 0px, 0px) rotateY(-10deg);
+    transform: translate3d(10px, 0px, -100px) rotateY(-10deg);
 
-    margin-left: 65%;
+    margin-left: calc(70vw - 150px);
 }
 img {
     display:block;
 
-    transform: translate3d(-700px, -50px, -2000px) rotateY(10deg);
+    transform: translate3d(-550px, -50px, -1500px) rotateY(10deg);
 
     border-radius: 25px;
 
-    width: 120%;
+    width: 1400px;
 }
 h4 {
-    transform: translate3d(-500px, -50px, -1700px) rotateY(10deg);
+    transform: translate3d(-300px, -50px, -1100px) rotateY(10deg);
 
-    font-size: 2.5em;
+    font-weight: normal;
+    font-size: 2em;
 }
 
-footer {
-    transform-style: preserve-3d;
-
+nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+    gap: 2em;
 
-    transform: rotateX(15deg) translate3d(0px, 0px, -500px);
-
+    a {
+        font-size: 1.5em;
+    }
     img {
         transform: none;
-        width: 200px;
+        width: 150px;
     }
-    img:hover {
-        transform: translateZ(8px);
-    
-        cursor: grab;
-    }
-    img:active {
-        transform: translateZ(-15px);
-    }
+}
+
+header > nav {
+    transform:translate3d(0px, 0px, -400px) rotateX(15deg);
+}
+footer > nav {
+    transform: rotateX(15deg) translate3d(0px, 0px, -400px);
 }
